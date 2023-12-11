@@ -36,7 +36,7 @@ button.addEventListener('click', (e) => {
 
   const cityName = inputCity.value;
 
-  const geo_api_url = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${geo_api_key}`;
+  const geo_api_url = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${geo_api_key}`;
 
   fetch(geo_api_url)
   .then(res => res.json())
