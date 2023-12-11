@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+   overflow: hidden;
+}
+body{
+    background-color: 
+    #217897;
+}
+@media only screen and (max-width: 600px) {
+    * {
+      overflow: visible;
+    }
+}
+:root{
+    --font-fam: 'Poppins', sans-serif;
+}
+header{
+   padding-top: 2rem;
+   padding-bottom: 1rem;
+}
+main{  
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.weatherAll {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(179, 170, 170, 0.366);
+    border-radius: 30px;
+    padding-bottom: 2rem;
+}
+.input-cont {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    text-align: center;
+}
+.btn{
+    width: 4em;
+    height: 2em;
+    font-size: 1em;
+    color: white;
+    background-color: #38b6ff;
+    list-style: none;
+    border-radius: 1em;
+    border-style: none;
+    margin: 2em;
+    
+}
+.input-text {
+    font-size: 1em;
+    padding: 0.6em;
+    border-radius: 1em;
+    background-color: #ececec;
+    box-shadow: 0.5px 0 3px 3px rgba(245, 237, 237, 0.821);
+    outline: none;
+    border-style: none;
+}
+.bg-img{
+    position: absolute;
+    right:  30%;
+    z-index: -1;
+}
+.weather-cont {
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    margin-right: 4rem;
+}
+p {
+    font-size: 2em;
+    font-family: var(--font-fam);
+    text-align: center;
+    margin-right: 4rem;
+    color: whitesmoke;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.weather-temp{
+    font-size: 2em;
+    font-family: var(--font-fam);
+}
+.hum, .feels {
+    font-size: 1.5em;
+    text-align: end;   
+}
+
+
+
+
